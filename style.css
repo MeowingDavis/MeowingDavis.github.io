@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+:root{
+    --colour-one: rgb(95, 140, 61);
+    --colour-two: rgb(100,100,100);
+    --colour-three: rgb(180,180,180);
+    --colour-four: rgb(240,240,240);
+    --border-one: dashed 2px white;
+}
+
+
+#top {
+    background-color: var(--colour-one);
+    padding-left: 10px;
+}
+
+#Gina {
+    padding-left: 15px;
+}
+
+#weekOne {
+    Padding: 10px;
+
+}
+
+#weekTwo {
+    Padding: 10px;
+
+}
+
+section {
+    background-color: aqua;
+}
