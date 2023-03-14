@@ -10,7 +10,7 @@ function setup() {
   print(
     "HALLO! Double click to randomly change background colour/clear. The slider changes the framerate"
   );
-
+//slider min, max, starting pos
   slider = createSlider(1, 60, 10);
 }
 
@@ -31,6 +31,8 @@ function draw() {
   slider.position(10, 10);
   slider.style("width", "60px");
 
+  
+  
   let val = slider.value();
   frameRate(val);
 
