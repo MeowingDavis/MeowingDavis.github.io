@@ -5,7 +5,7 @@ let slider;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(220);
+  background(R, G, B);
 
   print(
     "HALLO! Double click to randomly change background colour/clear. The slider changes the framerate"
