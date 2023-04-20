@@ -1,17 +1,26 @@
 //sketch for random squares and circles
+var song;
+var slider;
 
 let X, X2, Y, Y2, R, G, B, S, A;
-let slider;
+
+function preload() {
+  song = loadSound("arpLoop.wav");
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(R, G, B);
+  
+  frameRate(10);
+  
+  
+  slider = createSlider(0, 1, 0.5, 0.01)
+  song.loop();
 
   print(
     "HALLO! Double click to randomly change background colour/clear. The slider changes the framerate"
   );
-//slider min, max, starting pos
-  slider = createSlider(1, 60, 10);
 }
 
 function draw() {
@@ -26,15 +35,8 @@ function draw() {
   G = random(255);
   S = random(10, 50);
   A = random(1, 255);
-
-  //slider position and size
-  slider.position(10, 10);
-  slider.style("width", "60px");
-
   
-  
-  let val = slider.value();
-  frameRate(val);
+  song.setVolume(slider.value());
 
   rectMode(CENTER);
 
